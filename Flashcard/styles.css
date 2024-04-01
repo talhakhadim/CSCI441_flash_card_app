@@ -350,7 +350,8 @@ textarea:focus{
     background-color: #2a5eaf; /* Change color on hover */
   }
   
-  
+/*Login and Sign-up CSS*/
+
 .login {
     min-height:100vh;
     padding:100px;
@@ -368,6 +369,18 @@ textarea:focus{
     font-weight: bold;
 }
 
+.container-signup {
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.container-signup h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .login-wrapper{
     display:flex;
     justify-content: center
@@ -382,6 +395,18 @@ textarea:focus{
 
 .form-group{
     margin-bottom: 20px;
+
+}
+
+.signup-body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 9rem;
 
 }
 
@@ -463,19 +488,49 @@ textarea:focus{
     border-radius: 5px;
     cursor: pointer;
     margin: 20px auto;
+    right: 49%;
+    transform: translate(-50%);
 }
 
-
- .signupbtn{
-    background-color: #3b81d8;
-    color:#dcdcda;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px auto;
+.signupbtn,
+.cancelbtn {
+  padding: 10px 20px;
+  margin: 20px 10px;
 }
 
+.signupbtn{
+  background-color: #3b81d8;
+  color:#dcdcda;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  left: 55%;
+  transform: translate(-50%);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5em;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+label {
+  color: black;
+  font-size: 1rem;
+}
 
 @media screen and (max-width: 768px) {
   .header-div {
