@@ -369,21 +369,9 @@ textarea:focus{
     font-weight: bold;
 }
 
-.container-signup {
-  max-width: 800px;
-  margin:0 auto;
-}
-
-.container-signup h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .login-wrapper{
     display:flex;
-    justify-content: center
+    justify-content: center;
     
 }
 
@@ -396,6 +384,25 @@ textarea:focus{
 .form-group{
     margin-bottom: 20px;
 
+}
+
+.container-signup {
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.container-signup h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signup h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 15px;
+  margin-top: 2em;
 }
 
 .signup-body {
@@ -412,7 +419,7 @@ textarea:focus{
 
 .signup-wrapper{
     display:flex;
-    justify-content: center
+    justify-content: center;
     
 }
 
@@ -483,7 +490,7 @@ textarea:focus{
   .cancelbtn{
     background-color: #3b81d8;
     color:#dcdcda;
-    padding: 6px 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
