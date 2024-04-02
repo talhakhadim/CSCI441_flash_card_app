@@ -26,6 +26,15 @@
       currentCategory = document.getElementById("category").value;
       currentFlashcardIndex = 0;
       loadFlashcard();
+      updateFlashcardTopic();
+    }
+
+    //function to update flashcard topic
+
+     function updateFlashcardTopic(){
+      const categorySelect = document.getElementById("category");
+      const selectedCategoryOption = categorySelect.options[categorySelect.selectedIndex];
+      document.querySelector(".h2").textContent = selectedCategoryOption.textContent;
     }
 
     // Function to load the current flashcard

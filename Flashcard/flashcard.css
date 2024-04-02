@@ -235,7 +235,7 @@ a:hover {
 .previous,
 .next {
   position: absolute;
-  bottom: 240px;
+  bottom: 190px;
   left: 47%;
   transform: translateY(-50%);
   width: 40px; 
@@ -265,6 +265,29 @@ a:hover {
 
 .round {
   border-radius: 50%;
+}
+
+.category-selection {
+  margin-bottom: 20px; 
+}
+
+.category-selection label {
+  display:flex; 
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  width:50%
+}
+
+.category-selection select {
+  justify-content: center;
+  align-items: center;
+  width:10%;
+  margin-left:20%;
+
 }
 
 
