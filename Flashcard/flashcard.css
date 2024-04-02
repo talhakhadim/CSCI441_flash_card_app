@@ -154,10 +154,12 @@ h1 {
 }
 
 .row-4 {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 90%;
+  justify-content: center; 
+  align-items: flex-end; 
+  width: 100%; 
+  margin-top:20 px; 
 }
 
 .h2 {
@@ -234,32 +236,30 @@ a:hover {
 
 .previous,
 .next {
-  position: absolute;
-  bottom: 190px;
-  left: 47%;
-  transform: translateY(-50%);
-  width: 40px; 
-  height: 40px; 
-  line-height: 40px; 
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  font-size: 20px; 
+  font-size: 20px;
   border-radius: 50%;
   background-color: #f1f1f1;
   color: black;
   cursor: pointer;
+  margin-left:109px;
+  
 }
 
 .previous {
   background-color: #f1f1f1;
   color: black;
-  right: 49%;
+  right: 45%;
   transform: translate(-50%);
 }
 
 .next {
   background-color: #f1f1f1;
   color: black;
-  left: 52%;
+  left: 15%;
   transform: translate(-50%);
 }
 
