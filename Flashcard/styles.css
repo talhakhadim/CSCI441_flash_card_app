@@ -160,7 +160,10 @@ h1 {
   width: 90%;
 }
 
+/*Flashcard Page CSS*/
+
 .h2 {
+  font-size: 2em;
   text-align: center;
   padding: 0.5em;
 }
@@ -389,6 +392,7 @@ textarea:focus{
 .container-signup {
   max-width: 800px;
   margin:0 auto;
+  margin-bottom: 3.15em;
 }
 
 .container-signup h2 {
