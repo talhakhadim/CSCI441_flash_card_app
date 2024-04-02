@@ -389,6 +389,10 @@ textarea:focus{
     transform: translate(-50%);
 }
 
+.cancelbtn:hover {
+  background-color: #2a5eaf; /* Change color on hover */
+}
+
 .signupbtn,
 .cancelbtn {
   padding: 10px 20px;
@@ -405,6 +409,10 @@ textarea:focus{
   margin: 20px auto;
   left: 55%;
   transform: translate(-50%);
+}
+
+.signupbtn:hover {
+  background-color: #2a5eaf; /* Change color on hover */
 }
 
 .button-container {
