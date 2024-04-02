@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flashcard</title>
-  <link href="styles.css" rel="stylesheet" type="text/css" media="screen, projection" />
+  <link href="flashcard.css" rel="stylesheet" type="text/css" media="screen, projection" />
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous" />
@@ -35,6 +35,7 @@
       <option value="all">All</option>
       <option value="category1">Algorithms</option>
       <option value="category2">Data structures</option>
+	  <option value="category3">C++</option>
       
     </select>
   </div>
@@ -46,11 +47,14 @@
         </div>
         <div class="back">
           <p id="answer"></p>
-        </div>
-      </div>
+	</div>
+	
+	</div>
       <br />
+	  <div>
       <button onclick="prevFlashcard()" class="previous round">&#8249;</button>
       <button onclick="nextFlashcard()" class="next round">&#8250;</button>
+	  </div>
     </div>
   </main>
 
