@@ -1,5 +1,4 @@
-
-    // Define flashcard data 
+// Define flashcard data 
     const flashcards = {
       category1: [
         { question: "Definition of an algorithm", answer: "An algorithm is a sequence of unambiguous instructions for solving a problem (for obtaining a required output for any legitimate input in a finite amount of time)" },
@@ -11,8 +10,13 @@
         { question: "What is a stack?", answer: "A Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out)" },
         
       ],
+	  category3: [
+	  { question: "True or False: Using the namespace definition, using namespace std;, allows you to utilize cout and cin in C++.", answer: "True"},
+		  { question: "What symbols creates a single line comment and a multi line comment in C++?", answer: "// allows a single line comment and /* text */ allows multi line comments in C++"},
+	  ],
       
     };
+	
 
     let currentFlashcardIndex = 0;
     let currentCategory = "all"; 
@@ -31,6 +35,13 @@
       document.getElementById("question").textContent = currentFlashcard.question;
       document.getElementById("answer").textContent = currentFlashcard.answer;
     }
+	
+	//Event Listener to allow flipping flash cards by clicking
+	const flashcard = document.querySelector(".flashcard");
+	flashcard.addEventListener("click", () => {
+		flashcard.classList.toggle("flipCard");
+	})
+	
 
     // Function to get all flashcards if "All" category is selected
     function getAllFlashcards() {
