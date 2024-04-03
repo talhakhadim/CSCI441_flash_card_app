@@ -393,6 +393,13 @@ textarea:focus{
   background-color: #2a5eaf; /* Change color on hover */
 }
 
+.cancel {
+  text-decoration: none;
+}
+
+.cancel:visited {text-decoration: none; color: #dcdcda;}
+
+
 .signupbtn,
 .cancelbtn {
   padding: 10px 20px;
