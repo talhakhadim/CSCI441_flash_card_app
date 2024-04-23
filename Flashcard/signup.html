@@ -108,3 +108,45 @@
 	</div>
 </main>
   
+<script>
+  document.getElementById("signup-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    var email = document.querySelector('input[name="email"]').value;
+    var password = document.querySelector('input[name="psw"]').value;
+    var repeatPassword = document.querySelector('input[name="psw-repeat"]').value;
+
+    // Perform form validation
+    if (email === "") {
+      alert("Please enter your email.");
+      return;
+    }
+
+    if (password === "") {
+      alert("Please enter your password.");
+      return;
+    }
+
+    if (repeatPassword === "") {
+      alert("Please repeat your password.");
+      return;
+    }
+
+    if (password !== repeatPassword) {
+      alert("Passwords do not match.");
+      return;
+    }
+
+    // Form is valid, proceed with submission
+    alert("Form submitted successfully!");
+    window.location.href = "index.html";
+
+    // You can add your own logic here, such as sending the form data to a server
+
+    // Reset form
+    document.getElementById("signup-form").reset();
+  });
+</script>
+</body>
+</html>
